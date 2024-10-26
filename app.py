@@ -45,8 +45,6 @@ def stock():
         # else:
         #     forecast_data = None
 
-
-
         return jsonify({
             'message': 'Success',
             'company_name': company_name,
