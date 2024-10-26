@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script src="./static/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="mainbox">
+            <h1 class="title">Stock Prediction</h1>
+            
+            <div class="form-container">
+                <div class="form-column">
+                    <p>Years of Prediction</p>
+                    <form id="yearForm">
+                        <input type="radio" id="none" name="yearPredict" value="None">
+                        <label for="none">None</label>
+                        <input type="radio" id="select" name="yearPredict" value="SelectYear">
+                        <label for="select">Select Year:</label>
+                        <div id="yearRangeBox" style="display:none;">
+                            <input type="range" name="range" value="1" min="1" max="10" id="yearrange" class="yearrange"/>
+                            <div id="value">1</div>
+                        </div>                        
+                    </form>
+                </div>
+
+                <div class="form-column">
+                    <form id="stockForm">
+                        <label for="ticker">Stock Ticker:</label>
+                        <br>
+                        <input type="text" id="ticker" name="ticker" required>
+                        <button type="submit">Predict</button>
+                    </form>
+                </div>
+            </div>
+
+            
+            <h2>Prediction Results</h2>
+            <p id="responseText"></p>
+            <img id="stockChart" src="" alt="Stock Chart" style="display:none;">
+        </div>
+        <div id="rightbox"></div>
+    </div>
+</body>
+</html>

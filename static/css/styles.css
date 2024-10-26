@@ -1,0 +1,60 @@
+body {
+    background: #edebeb;
+}
+
+.container {
+    padding: 2%;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Flex container for horizontal alignment */
+.form-container {
+    display: flex;
+    align-items: top;
+    gap: 50px;
+}
+
+/* Ensure form-column items are laid out correctly */
+.form-column {
+    row-gap: 5px;
+}
+
+label, p {
+    min-width: 150px; /* Fixed width to align labels */
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.yearrange {
+    appearance: none;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #a5c8e5 0%, #cccccc 0%);
+    cursor: pointer;
+}
+  
+.yearrange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #113f5b;
+    box-shadow: none;
+ }
+
+.yearrange:hover {
+	cursor: grab;
+}
+
+.yearrange:active {
+	cursor: grabbing;
+}
